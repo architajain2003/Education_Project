@@ -11,6 +11,7 @@ import Register from "./components/Register";
 import "./App.css";
 import Chatbot from "./components/Chatbot";
 import CourseDetails from "./components/CourseDetails";
+import Video from "./components/Video";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Courses" element={<Courses />} />
           <Route path="/register" element={<Register />} />
           <Route path="/courses/:id" element={<CourseDetails />} />
+          <Route path="/Video" element={<Video/>}/>
         </Routes>
       </main>
       <Chatbot />
