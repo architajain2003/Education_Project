@@ -7585,3 +7585,41 @@ html {
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
+/* Items details CSS */
+
+.details-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  /* border: 0.2px solid black; */
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding-bottom: 2rem;
+}
+.details-top {
+  margin: 2rem;
+  padding-top: 2rem;
+  display: flex;
+}
+.details-img img {
+  height: 300px;
+  border-radius: 1rem;
+}
+.details-right {
+  margin-left: 30px;
+}
+.details-right h1 {
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+.details-right h3 {
+}
+.details-container p {
+  margin: 2rem;
+  font-size: 15px;
+  opacity: 0.7;
+  line-height: 1.5rem;
+}

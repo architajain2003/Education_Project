@@ -10,6 +10,7 @@ import Courses from "./components/Courses";
 import Register from "./components/Register";
 import "./App.css";
 import Chatbot from "./components/Chatbot";
+import CourseDetails from "./components/CourseDetails";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/Courses" element={<Courses />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/details" element={<CourseDetails />} />
         </Routes>
       </main>
       <Chatbot />
