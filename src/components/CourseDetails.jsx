@@ -144,6 +144,8 @@ const CourseDetails = () => {
               Fundamental of UX for Application design
             </h1>
             <h3 className="details-price">Rs. 5000</h3>
+            <button className="btn btn-large">Watch Now</button>
+            <button className="btn btn-large ml-3">Book An appointment</button>
           </div>
         </div>
         <p>
