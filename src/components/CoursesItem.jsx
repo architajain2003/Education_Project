@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import courses from "../data.js";
 const CoursesItem = ({ course }) => {
   return (
@@ -32,9 +33,12 @@ const CoursesItem = ({ course }) => {
                 <span>Rs. {course.price}</span>
               </div>
             </div>
-            <a href="#" className="border-btn border-btn2">
+            <Link
+              to={`/courses/${course.id}`}
+              className="border-btn border-btn2"
+            >
               Find out more
-            </a>
+            </Link>
           </div>
         </div>
       </div>

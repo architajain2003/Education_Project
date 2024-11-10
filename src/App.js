@@ -24,7 +24,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/Courses" element={<Courses />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/details" element={<CourseDetails />} />
+          <Route path="/courses/:id" element={<CourseDetails />} />
         </Routes>
       </main>
       <Chatbot />

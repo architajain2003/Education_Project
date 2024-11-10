@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import courses from "../data.js";
+
+import { Link, useParams } from "react-router-dom";
 import "../assets/css/bootstrap.min.css";
 import "../assets/css/slicknav.css";
 import "../assets/css/flaticon.css";
@@ -15,6 +17,8 @@ import "../assets/css/nice-select.css";
 import "../assets/css/style.css";
 
 const CourseDetails = () => {
+  const { id } = useParams();
+  const course = courses[id - 1];
   return (
     <>
       {/* Header Start */}
@@ -27,7 +31,7 @@ const CourseDetails = () => {
                 <div className="col-xl-2 col-lg-2">
                   <div className="logo">
                     <a href="#">
-                      <img src="assets/img/logo/logo.png" alt="" />
+                      <img src="/assets/img/logo/logo.png" alt="logo" />
                     </a>
                   </div>
                 </div>
@@ -137,13 +141,11 @@ const CourseDetails = () => {
       <div className="details-container">
         <div className="details-top">
           <div className="details-img">
-            <img src="assets/img/gallery/featured1.png" alt="" />
+            <img src={`/${course.imgUrl}`} alt="" />
           </div>
           <div className="details-right">
-            <h1 className="details-name">
-              Fundamental of UX for Application design
-            </h1>
-            <h3 className="details-price">Rs. 5000</h3>
+            <h1 className="details-name">{course.name}</h1>
+            <h3 className="details-price">Rs. {course.price}</h3>
             <button className="btn btn-large">Watch Now</button>
             <button className="btn btn-large ml-3">Book An appointment</button>
           </div>
