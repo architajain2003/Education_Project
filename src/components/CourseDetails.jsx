@@ -147,7 +147,7 @@ const CourseDetails = () => {
             <h1 className="details-name">{course.name}</h1>
             <h3 className="details-price">Rs. {course.price}</h3>
             <button className="btn btn-large">Watch Now</button>
-            <button className="btn btn-large ml-3">Book An appointment</button>
+            <button className="btn btn-large ml-3">Ask a doubt</button>
           </div>
         </div>
         <p>
