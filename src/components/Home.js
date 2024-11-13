@@ -14,6 +14,7 @@ import "../assets/css/themify-icons.css";
 import "../assets/css/slick.css";
 import "../assets/css/nice-select.css";
 import "../assets/css/style.css";
+import courses from "../data.js";
 
 function Home() {
   return (
@@ -204,21 +205,15 @@ function Home() {
                     <div className="properties__card ">
                       <div className="properties__img overlay1">
                         <a href="#">
-                          <img src="assets/img/gallery/featured1.png" alt="" />
+                          <img src={`/${courses[0].imgUrl}`} alt="" />
                         </a>
                       </div>
                       <div className="properties__caption">
-                        <p>User Experience</p>
+                        <p>{courses[0].tag}</p>
                         <h3>
-                          <a href="#">
-                            Fundamental of UX for Application design
-                          </a>
+                          <a href="#">{courses[0].name}</a>
                         </h3>
-                        <p>
-                          The automated process all your website tasks. Discover
-                          tools and techniques to engage effectively with
-                          vulnerable children and young people.
-                        </p>
+                        <p>{courses[0].description}</p>
                         <div className="properties__footer d-flex justify-content-between align-items-center">
                           <div className="restaurant-name">
                             <div className="rating">
@@ -233,12 +228,15 @@ function Home() {
                             </p>
                           </div>
                           <div className="price">
-                            <span>$135</span>
+                            <span>{courses[0].price}</span>
                           </div>
                         </div>
-                        <a href="#" className="border-btn border-btn2">
+                        <Link
+                          to={`/courses/${courses[0].id}`}
+                          className="border-btn border-btn2"
+                        >
                           Find out more
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -248,21 +246,15 @@ function Home() {
                     <div className="properties__card">
                       <div className="properties__img overlay1">
                         <a href="#">
-                          <img src="assets/img/gallery/featured2.png" alt="" />
+                          <img src={`/${courses[1].imgUrl}`} alt="" />
                         </a>
                       </div>
                       <div className="properties__caption">
-                        <p>User Experience</p>
+                        <p>{courses[1].tag}</p>
                         <h3>
-                          <a href="#">
-                            Fundamental of UX for Application design
-                          </a>
+                          <a href="#">{courses[1].name}</a>
                         </h3>
-                        <p>
-                          The automated process all your website tasks. Discover
-                          tools and techniques to engage effectively with
-                          vulnerable children and young people.
-                        </p>
+                        <p>{courses[1].description}</p>
                         <div className="properties__footer d-flex justify-content-between align-items-center">
                           <div className="restaurant-name">
                             <div className="rating">
@@ -277,12 +269,15 @@ function Home() {
                             </p>
                           </div>
                           <div className="price">
-                            <span>$135</span>
+                            <span>{courses[1].price}</span>
                           </div>
                         </div>
-                        <a href="#" className="border-btn border-btn2">
+                        <Link
+                          to={`/courses/${courses[1].id}`}
+                          className="border-btn border-btn2"
+                        >
                           Find out more
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -292,21 +287,15 @@ function Home() {
                     <div className="properties__card">
                       <div className="properties__img overlay1">
                         <a href="#">
-                          <img src="assets/img/gallery/featured3.png" alt="" />
+                          <img src={`/${courses[2].imgUrl}`} alt="" />
                         </a>
                       </div>
                       <div className="properties__caption">
-                        <p>User Experience</p>
+                        <p>{courses[2].tag}</p>
                         <h3>
-                          <a href="#">
-                            Fundamental of UX for Application design
-                          </a>
+                          <a href="#">{courses[2].name}</a>
                         </h3>
-                        <p>
-                          The automated process all your website tasks. Discover
-                          tools and techniques to engage effectively with
-                          vulnerable children and young people.
-                        </p>
+                        <p>{courses[2].description}</p>
                         <div className="properties__footer d-flex justify-content-between align-items-center">
                           <div className="restaurant-name">
                             <div className="rating">
@@ -321,12 +310,15 @@ function Home() {
                             </p>
                           </div>
                           <div className="price">
-                            <span>$135</span>
+                            <span>{courses[2].price}</span>
                           </div>
                         </div>
-                        <a href="#" className="border-btn border-btn2">
+                        <Link
+                          to={`/courses/${courses[2].id}`}
+                          className="border-btn border-btn2"
+                        >
                           Find out more
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -336,21 +328,15 @@ function Home() {
                     <div className="properties__card">
                       <div className="properties__img overlay1">
                         <a href="#">
-                          <img src="assets/img/gallery/featured2.png" alt="" />
+                          <img src={`/${courses[3].imgUrl}`} alt="" />
                         </a>
                       </div>
                       <div className="properties__caption">
-                        <p>User Experience</p>
+                        <p>{courses[3].tag}</p>
                         <h3>
-                          <a href="#">
-                            Fundamental of UX for Application design
-                          </a>
+                          <a href="#">{courses[3].name}</a>
                         </h3>
-                        <p>
-                          The automated process all your website tasks. Discover
-                          tools and techniques to engage effectively with
-                          vulnerable children and young people.
-                        </p>
+                        <p>{courses[3].description}</p>
                         <div className="properties__footer d-flex justify-content-between align-items-center">
                           <div className="restaurant-name">
                             <div className="rating">
@@ -365,12 +351,15 @@ function Home() {
                             </p>
                           </div>
                           <div className="price">
-                            <span>$135</span>
+                            <span>{courses[3].price}</span>
                           </div>
                         </div>
-                        <a href="#" className="border-btn border-btn2">
+                        <Link
+                          to={`/courses/${courses[3].id}`}
+                          className="border-btn border-btn2"
+                        >
                           Find out more
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -868,11 +857,7 @@ function Home() {
                     <div className="footer-copy-right text-center">
                       <p>
                         {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-                        Copyright © All rights reserved | This template is made
-                        with <i className="fa fa-heart" aria-hidden="true" /> by{" "}
-                        <a href="https://colorlib.com" target="_blank">
-                          Colorlib
-                        </a>
+                        Copyright © All rights reserved
                         {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
                       </p>
                     </div>

@@ -642,7 +642,7 @@ hr {
   height: 50px;
   width: 50px;
   right: 31px;
-  bottom: 18px;
+  bottom: 100px;
   position: fixed;
   color: #fff;
   font-size: 20px;
@@ -7597,6 +7597,7 @@ html {
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding-bottom: 2rem;
+  margin-bottom: 200px;
 }
 .details-top {
   margin: 2rem;
