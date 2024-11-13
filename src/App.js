@@ -26,7 +26,7 @@ function App() {
           <Route path="/Courses" element={<Courses />} />
           <Route path="/register" element={<Register />} />
           <Route path="/courses/:id" element={<CourseDetails />} />
-          <Route path="/Video" element={<Video/>}/>
+          <Route path="/Video" element={<Video />} />
         </Routes>
       </main>
       <Chatbot />

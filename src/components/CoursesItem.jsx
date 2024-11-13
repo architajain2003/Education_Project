@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import courses from "../data.js";
 const CoursesItem = ({ course }) => {
   return (
     <div className="col-6">
@@ -30,7 +29,7 @@ const CoursesItem = ({ course }) => {
                 </p>
               </div>
               <div className="price">
-                <span>Rs. {course.price}</span>
+                <span>{course.price}</span>
               </div>
             </div>
             <Link

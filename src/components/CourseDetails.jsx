@@ -145,13 +145,24 @@ const CourseDetails = () => {
           </div>
           <div className="details-right">
             <h1 className="details-name">{course.name}</h1>
-            <h3 className="details-price">Rs. {course.price}</h3>
-            <button className="btn btn-large">Watch Now</button>
-            <button className="btn btn-large ml-3"><Link to="/Video">Ask a doubt</Link></button>
+            <h3 className="details-price">{course.price}</h3>
+            <button className="btn btn-large">
+              <Link to="/Video">Watch Now</Link>
+            </button>
+            <button className="btn btn-large ml-3">Ask a doubt</button>
           </div>
         </div>
         <p>
-          The automated process all your website tasks. Discover tools and
+          {course.details[0]}
+          <br />
+          <br />
+          {course.details[1]}
+          <br />
+          <br />
+          {course.details[2]}
+          <br />
+          <br />
+          {/* The automated process all your website tasks. Discover tools and
           techniques to engage effectively with vulnerable children and young
           people.
           <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -165,7 +176,7 @@ const CourseDetails = () => {
           <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Perferendis impedit veniam error ullam voluptas, ab odit ipsum earum
           officia hic, voluptatum veritatis suscipit dicta natus molestias
-          facilis aliquam. Odio, atque.
+          facilis aliquam. Odio, atque. */}
         </p>
       </div>
     </>
