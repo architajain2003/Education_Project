@@ -2,7 +2,7 @@
 import React from "react";
 import "../assets/css/Sidebar.css";
 
-function Sidebar() {
+function Sidebar({ onTopicSelect }) {
   return (
     <div className="sidebar">
       <div className="sidebar-heading">
@@ -13,17 +13,19 @@ function Sidebar() {
           <button>Section 1: Course Introduction</button>
         </li>
         <li>
-          <button>Section 2: Web Design Guidelines</button></li>
-          <ol><li>
-            <button>HTML</button>
+          <button>Section 2: Web Design Guidelines</button>
+        </li>
+        <ol>
+          <li>
+            <button onClick={() => onTopicSelect("HTML")}>HTML</button>
           </li>
           <li>
-            <button>CSS</button>
+            <button onClick={() => onTopicSelect("CSS")}>CSS</button>
           </li>
           <li>
-            <button>JAVASCRIPT</button>
+            <button onClick={() => onTopicSelect("JavaScript")}>JavaScript</button>
           </li>
-          </ol>
+        </ol>
         <li>
           <button>Section 3: Course Summary</button>
         </li>
