@@ -27,8 +27,9 @@ function Video() {
         
         <div className="video-player">
           {/* <p>Video Placeholder</p> */}
-          <video controls width="100%" height="500px">
-        <source src="your-video-file.mp4" type="video/mp4" />
+          <video controls width="50%" height="500px">
+        <source src="/assets/video/HTML clip.mp4" type="video/mp4" />
+        {/* <source src="path-to-your-video-file.mp4" type="video/mp4" /> */}
         Your browser does not support the video tag.
       </video>
         </div>
@@ -56,6 +57,7 @@ function Video() {
         {/* <button className="btn btn-large">Watch Now</button> */}
       </div>
     </div>
+    
   );
 }
 

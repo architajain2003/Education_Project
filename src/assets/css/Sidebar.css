@@ -25,7 +25,7 @@
     
 }
 
-.sidebar li {
+.sidebar ul li {
     border-bottom: 1px solid black;
     margin: 10px 0;
   }
@@ -36,5 +36,10 @@
   }
   .sidebar button:hover{
     color: grey;
+  }
+  .sidebar ol li{
+    margin-left: 20px;
+    border: 0;
+    list-style-type: disc;
   }
   
