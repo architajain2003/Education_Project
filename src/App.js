@@ -12,6 +12,10 @@ import "./App.css";
 import Chatbot from "./components/Chatbot";
 import CourseDetails from "./components/CourseDetails";
 import Video from "./components/Video";
+import StudentDashboard from "./components/StudentDashboard";
+import Logout from './components/Logout';
+import Schedule from "./components/Schedule";
+import EditProfile from "./components/EditProfile";
 
 function App() {
   return (
@@ -27,6 +31,10 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/courses/:id" element={<CourseDetails />} />
           <Route path="/Video" element={<Video />} />
+          <Route path="/StudentDashboard" element={<StudentDashboard/>} />
+          <Route path="/logout" element={<Logout />} />
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/EditProfile" element={<EditProfile/>}/>
         </Routes>
       </main>
       <Chatbot />
