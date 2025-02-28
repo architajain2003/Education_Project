@@ -64,6 +64,10 @@ function Home() {
                               <Link to="/about">About</Link>
                             </li>
                             <li>
+                                  {/* <a href="elements.html">Element</a> */}
+                                  <Link to="/StudentDashboard">student</Link>
+                                </li>
+                            <li>
                               <a href="#">Blog</a>
                               <ul className="submenu">
                                 <li>
@@ -78,6 +82,7 @@ function Home() {
                                   {/* <a href="elements.html">Element</a> */}
                                   <Link to="/elements">Element</Link>
                                 </li>
+                                
                               </ul>
                             </li>
                             <li>
